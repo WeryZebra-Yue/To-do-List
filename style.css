@@ -170,7 +170,8 @@
     
     .landinganime {
         /* animation: land 1s ease; */
-        clip-path: circle(109px at 90% -20%);
+        height: 100%;
+        transform: translateY(-10%);
         -webkit-clip-path: circle(1800px at 90% -20%);
         transition: 1s all;
     }
