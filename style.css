@@ -162,16 +162,18 @@
         align-items: center;
         font-weight: bold;
         font-size: 30px;
+        transform: translateY(-1%);
         font-family: 'Sofia';
-        transform: translateY(-10%);
+        clip-path: circle(100px at 90% -20%);
         -webkit-clip-path: circle(100px at 90% -20%);
+        transition: all 1s ease-out;
         transition: 1s all;
     }
     
     .landinganime {
         /* animation: land 1s ease; */
-        clip-path: circle(109px at 90% -20%);
-        -webkit-clip-path: circle(1800px at 90% -20%);
+        clip-path: circle(1000px at 90% -10%);
+        -webkit-clip-path: circle(1810px at 90% -10%);
         transition: 1s all;
     }
     
@@ -198,7 +200,7 @@
             font-size: 25px;
         }
         .landinganime {
-            transform: translateY(-12%);
+            /* transform: translateY(-12%); */
         }
     }
     
