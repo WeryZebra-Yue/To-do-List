@@ -168,6 +168,8 @@
         -webkit-clip-path: circle(100px at 90% -20%);
         transition: all 1s ease-out;
         transition: 1s all;
+       overflow: scroll;
+
     }
     
     .landinganime {
