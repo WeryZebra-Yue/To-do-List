@@ -5,7 +5,7 @@
     
     body {
         background-image: url('Images//forest-landscapes-lightroom-presets-different-looks-05.jpg');
-        z-index: 200;
+        overflow: hidden;
     }
     
     .addsection {
@@ -84,6 +84,15 @@
         height: 30px;
         cursor: pointer;
         transform: translate(-310%, 100%);
+    }
+    .timer2 {
+        float: right;
+        width: 30px;
+        height: 30px;
+        padding-left: 5px;
+        cursor: pointer;
+        transform: translate(-270%, 100%);
+        border-radius: 100px;
     }
     
     img {
@@ -168,8 +177,7 @@
         -webkit-clip-path: circle(100px at 90% -20%);
         transition: all 1s ease-out;
         transition: 1s all;
-       overflow: scroll;
-
+        overflow: scroll;
     }
     
     .landinganime {
