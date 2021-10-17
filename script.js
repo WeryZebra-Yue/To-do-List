@@ -47,7 +47,7 @@ submit.addEventListener('click', (e) => {
         let box = document.createElement('div');
         let timer = document.createElement('img');
         timer.classList.add("time")
-        timer.src = "Images//download.png"
+        timer.src = "https://github.com/sohamsinh31/Vplex.github.io/blob/main/images/download.png?raw=true"
         box.innerHTML = text.value;
         timer.classList.add("timer2");
         let delete_img = document.createElement('img');
