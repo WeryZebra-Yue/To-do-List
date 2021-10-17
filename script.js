@@ -1,3 +1,6 @@
+//timer by sohamsinh31
+const { Script } = require("vm");
+
 // In Style , Query Selector , id = # , class= . ,
 let submit = document.querySelector('#submit');
 let text = document.querySelector('#input');
@@ -42,7 +45,11 @@ submit.addEventListener('click', (e) => {
 
         let mainbox = document.createElement('div');
         let box = document.createElement('div');
+        let timer = document.createElement('img');
+        timer.classList.add("time")
+        timer.src = "Images//download.png"
         box.innerHTML = text.value;
+        timer.classList.add("timer2");
         let delete_img = document.createElement('img');
         let check_img = document.createElement('img');
         delete_img.src = "Images//icons8-delete-64.png";
@@ -52,13 +59,16 @@ submit.addEventListener('click', (e) => {
         box.classList.add('box');
         mainbox.classList.add('mainbox');
         text.value = "";
-        mainbox.append(box, check_img, delete_img)
+        mainbox.append(box, check_img, delete_img, timer)
         todosec.append(mainbox);
         delete_img.addEventListener('click', (e) => {
             mainbox.classList.add("animation")
             setTimeout(() => { mainbox.remove(mainbox); }, 595)
 
         });
+        timer.addEventListener('click', (e) => {
+            function samay()
+        })
         check_img.addEventListener('click', (e) => {
             box.classList.toggle('done');
         });
@@ -79,6 +89,7 @@ submit.addEventListener('click', (e) => {
 
     }
 });
+
 
 function MENU(doc, details, Class) {
     doc.addEventListener('click', () => {
