@@ -1,5 +1,4 @@
 //timer by sohamsinh31
-const { Script } = require("vm");
 
 // In Style , Query Selector , id = # , class= . ,
 let submit = document.querySelector('#submit');
